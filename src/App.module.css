@@ -1,0 +1,216 @@
+.sobreMimSection {
+    background-color: rgb(255, 211, 208);
+    color: rgb(43, 101, 55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .sobreMimBackgroundContainer {
+    position: relative; 
+    width: 100vw;
+    margin-bottom: 2rem; 
+  }
+  
+  .sobreMimBackgroundImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sobreMimTitle {
+    filter: drop-shadow(3px 3px 2px rgb(6, 27, 6));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(94, 236, 123);
+    font-size: 3rem;
+    font-family: "Chewy", system-ui;
+    z-index: 10;
+  }
+  
+  .profileImageContainer {
+    position: relative;
+    right: 30%;
+    border-radius: 50%;
+    overflow: hidden; 
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(75, 198, 99);
+    box-shadow: 2px 2px 5px rgba(106, 196, 79, 0.572);
+    top: -80px;
+  }
+  
+  .profileImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+ 
+  .sobreMimSection p {
+    display: flex;
+    z-index: 1; 
+    width: 90%;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.PortfolioSection {
+  background-color: rgb(51, 82, 51);
+  color: rgb(252, 173, 186);
+  min-height: 100vh;
+}
+  
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.PortfolioSection h2{
+    margin: 40px;
+    background-color: rgb(24, 41, 56);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Chewy", system-ui;
+}
+.PortfolioSection p{
+    font-family: "Poppins", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    text-align: center;
+}
+.cardsGrid div {
+  background: rgba(23, 56, 21, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardsGrid div:hover {
+  transform: translateY(-5px);
+}
+
+.cardsGrid img {
+  width: 70%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.cardsGrid a {
+  color: rgb(255, 227, 231);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 60px;
+  transition: background 0.3s ease;
+}
+
+.cardsGrid a:hover {
+  background: rgba(255, 215, 233, 0.3);
+  color: pink;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--bg);
+  color: var(--text);
+  text-align: center;
+}
+
+footer a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+
+@media (width > 642px){
+    
+    .sobreMimBackgroundContainer {
+        width: 100vw;
+        margin-top: -100px;
+      }
+
+      .sobreMimTitle {
+       filter:drop-shadow(7px 6px 2px rgb(6, 38, 2));
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        font-family: "Chewy", system-ui;
+        z-index: 10;
+      }
+
+      .profileImageContainer {
+        width: 200px;
+        height: 200px;
+      }
+     
+      .sobreMimSection p {
+        z-index: 1; 
+        width: 90%;
+        margin-top: -50px;
+        font-size: 1.2rem;
+      }
+
+      .PortfolioSection p{
+        font-size: 2rem;
+    }
+
+}
+
+@media (width > 1150px){
+  .sobreMimBackgroundImage {
+    width: 100%;
+    height: auto;
+    margin-top: -300px;
+  }
+    .profileImageContainer {
+        position: relative;
+        top: -150px;
+        right: 30%;
+        border-radius: 50%;
+        overflow: hidden; 
+        width: 300px;
+        height: 300px;
+        border: 2px solid rgb(75, 198, 99);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+}
+
+@media (width > 1500px){
+  .sobreMimBackgroundImage {
+    width: 100%;
+    height: auto;
+    margin-top: -500px;
+  }
+}
